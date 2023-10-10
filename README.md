@@ -13,7 +13,7 @@
 >> ./cliente.AppImage
 ```
 
-#### Se quiser instalar localmente, basta usar o NPM em seus respectivos diretórios.
+### Se quiser instalar localmente, basta usar o NPM em seus respectivos diretórios. (Qualquer sistema operacional)
 
 1. Tanto no servidor como no cliente o comando é o mesmo:
 ```bash
