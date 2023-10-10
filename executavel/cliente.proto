@@ -1,0 +1,44 @@
+syntax = "proto3";
+package clientStub;
+
+// The greeting service definition.
+service Cliente {
+    // Sends a greeting
+    rpc RepassarMensagens (Mensagens) returns (None);
+    rpc AtualizarPlayers (NovoX) returns (None);
+    rpc LimparModais (None) returns (None);
+    rpc AtualizarEstado (NovoEstado) returns (None);
+    rpc Desistir (Jogador) returns (None);
+    rpc Reiniciar (DadosReiniciar) returns (None);
+    rpc ClienteDesconectado (None) returns (None);
+}
+
+message NovoX {
+    int32 novoX = 1;
+}
+
+message DadosReiniciar {
+    int32 idX = 1;
+    bool esperarDeNovo = 2;
+}
+
+message Jogador {
+    string jogador = 1;
+}
+
+message NovoEstado {
+    repeated string estado = 1;
+    string proximoJogador = 2;
+}
+
+// The request message containing the user's name.
+message Mensagem {
+    string nome = 1;
+    string conteudo = 2;
+}
+
+message Mensagens {
+    repeated Mensagem mensagens = 1;
+}
+
+message None {}

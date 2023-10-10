@@ -1,0 +1,48 @@
+syntax = "proto3";
+package serverStub;
+
+// The greeting service definition.
+service Servidor {
+  // Sends a greeting
+  rpc EnviarMensagem (Mensagem) returns (None);
+  rpc EntrarNoJogo (idUsuario) returns (DadosIniciais);
+  rpc Conectar (Porta) returns (None);
+  rpc Desconectar (Porta) returns (None);
+  rpc Iniciar (None) returns (None);
+  rpc AtualizarEstado (NovoEstado) returns (None);
+  rpc Desistir (Jogador) returns (None);
+  rpc Reiniciar (None) returns (None);
+}
+
+message Jogador {
+  string jogador = 1;
+}
+
+message Mensagem {
+  string nome = 1;
+  string conteudo = 2;
+}
+
+message NovoEstado {
+  repeated string estado = 1;
+  string proximoJogador = 2;
+}
+
+message DadosIniciais {
+  string player = 1;
+  bool salaCheia = 2;
+}
+
+message Porta {
+  int32 porta = 1;
+}
+
+message idUsuario {
+  int32 idUsuario = 1;
+}
+
+message EnderecoCliente {
+  string endereco = 1;
+}
+
+message None {}
