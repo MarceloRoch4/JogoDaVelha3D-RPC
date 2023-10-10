@@ -1,4 +1,4 @@
-### Passos para execução do jogo da velha 3D.
+### Passos para execução do jogo da velha 3D RPC.
 
 1. Para executar o projeto, basta entrar na pasta `executavel`.
 
