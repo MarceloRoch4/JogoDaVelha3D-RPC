@@ -1,4 +1,4 @@
-### Passos para execução do jogo da velha 3D RPC.
+### Passos para execução do jogo da velha 3D RPC. (Linux apenas)
 
 1. Para executar o projeto, basta entrar na pasta `executavel`.
 
@@ -17,5 +17,5 @@
 
 1. Tanto no servidor como no cliente o comando é o mesmo:
 ```bash
->> npm install & npm start
+>> npm install && npm start
 ```
