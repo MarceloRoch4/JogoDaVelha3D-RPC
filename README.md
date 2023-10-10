@@ -2,13 +2,21 @@
 
 1. Para executar o projeto, basta entrar na pasta `executavel`.
 
-2. Em um console, rode o servidor
+2. Em um console, dê permissões de execução para o servidor:
+```bash
+>> chmod a+x ./servidor
+```
+
+3. Agora rode o servidor
 ```bash
 >> ./servidor
 ```
 
-
-3. Em outros consoles, rode 2 instâncias do cliente:
+4. Em outros 2 consoles, dê permissões de execução para os clientes:
+```bash
+>> chmod a+x ./cliente.AppImage
+```
+5. Agora rode os clientes
 ```bash
 >> ./cliente.AppImage
 ```
